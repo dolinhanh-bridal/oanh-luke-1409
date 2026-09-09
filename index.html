@@ -298,6 +298,10 @@
   .lb .qua.tr{left:10px} .lb .qua.ph{right:10px}
   .lb .dem{position:absolute;bottom:18px;left:0;right:0;text-align:center;color:#fff;font-size:12.5px;opacity:.8}
   .mb img{cursor:zoom-in}
+  .lang{display:flex;gap:6px;justify-content:flex-end;margin-bottom:8px}
+  .lang button{font:inherit;font-size:12px;padding:5px 12px;border-radius:999px;cursor:pointer;
+    border:1px solid var(--line);background:var(--surface);color:var(--muted)}
+  .lang button.on{background:var(--blue);border-color:var(--blue);color:#fff}
   label.f[data-ma]{display:flex;flex-direction:column;gap:5px;margin-top:4px}
   label.f[data-ma] .lb{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
   label.f[data-ma] textarea{width:100%;font:inherit;font-size:15px;color:var(--ink);background:var(--ground);
@@ -313,6 +317,7 @@
 
 <div class="wrap">
   <header>
+    <div class="lang"><button type="button" class="on" data-lang="vi">Tiếng Việt</button><button type="button" data-lang="en">English</button></div>
     <div class="eyebrow">Dolinhanh Bridal × Nupakachi Wedding</div>
     <h1>Cô dâu Oanh &amp; chú rể Luke</h1>
     <div class="sub">Buổi chụp pre-wedding 14/09/2026 · toàn bộ thông tin buổi chụp của hai bạn</div>
@@ -367,7 +372,7 @@
   <section class="sec" data-sec="sp">
     <button class="head" type="button"><span class="num">2</span><span class="t">Sản phẩm nhận được</span><span class="arrow">›</span></button>
     <div class="body">
-      <div class="note">Những gì hai bạn nhận được sau buổi chụp. Giờ giấc, địa điểm và trang phục nằm ở mục <b>5 · Timeline buổi chụp</b>.</div>
+      <div class="note">Những gì hai bạn nhận được sau buổi chụp. Giờ giấc, địa điểm và trang phục nằm ở mục <b>4 · Timeline buổi chụp</b>.</div>
 
       <div class="goi">
         <div class="goi-h">Gói chụp <b>VŨ GARDEN</b> (SG Outdoor) — chụp 14/09/2026</div>
@@ -385,35 +390,16 @@
         <ul class="ck" data-ck>
           <li><span class="txt">Ảnh chụp film<small>Miễn phí công chụp — 3 cuộn film do khách chi</small></span></li>
           <li><span class="txt">5 thiết kế tặng kèm</span></li>
-          <li><span class="txt">Thiệp cưới online<small>Xem mục 3</small></span></li>
+          <li><span class="txt">Thiệp cưới online<small>Xem mục 7</small></span></li>
         </ul>
       </div>
     </div>
   </section>
 
-  <!-- 3. THIỆP ONLINE -->
-  <section class="sec" data-sec="thiep">
-    <button class="head" type="button"><span class="num">3</span><span class="t">Thiệp online</span><span class="arrow">›</span></button>
-    <div class="body">
-      <div class="note">Hai bạn xem <b>thiệp mẫu</b> trước, rồi điền <b>form</b> — thiệp sẽ tự dựng và link gửi về mail của hai bạn.</div>
-      <div class="link">
-        <div class="lk">
-          <div class="lk-t">Thiệp mẫu cho khách xem trước</div>
-          <a href="https://dolinhanh-bridal.github.io/thiep-mau-dolinhanh/" target="_blank" rel="noopener">dolinhanh-bridal.github.io/thiep-mau-dolinhanh/</a>
-          <button class="btn" type="button" data-copy="https://dolinhanh-bridal.github.io/thiep-mau-dolinhanh/">Copy link thiệp mẫu</button>
-        </div>
-        <div class="lk">
-          <div class="lk-t">Form làm thiệp — khách tự điền</div>
-          <a href="https://script.google.com/macros/s/AKfycbwVWHJMBZFw6XX7t2Haqs9AT1UTgPmdKUHLzm69Si_h7-ylKNd7HsfcwUQeI4AL-uiLVw/exec" target="_blank" rel="noopener">script.google.com/macros/s/AKfycbwVWHJM…/exec</a>
-          <button class="btn" type="button" data-copy="https://script.google.com/macros/s/AKfycbwVWHJMBZFw6XX7t2Haqs9AT1UTgPmdKUHLzm69Si_h7-ylKNd7HsfcwUQeI4AL-uiLVw/exec">Copy link form</button>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- 4. MOODBOARD PRE -->
   <section class="sec" data-sec="mood">
-    <button class="head" type="button"><span class="num">4</span><span class="t">Moodboard Pre</span><span class="arrow">›</span></button>
+    <button class="head" type="button"><span class="num">3</span><span class="t">Moodboard Pre</span><span class="arrow">›</span></button>
     <div class="body">
       <div class="note">Moodboard chia theo 3 nơi chụp — để hai bạn hình dung tinh thần từng set, không phải khuôn mẫu phải chụp y hệt.</div>
       <div class="goi">
@@ -441,7 +427,7 @@
 
   <!-- 5. TIMELINE CHỤP PRE -->
   <section class="sec" data-sec="chup">
-    <button class="head" type="button"><span class="num">5</span><span class="t">Timeline buổi chụp — 14/09</span><span class="arrow">›</span></button>
+    <button class="head" type="button"><span class="num">4</span><span class="t">Timeline buổi chụp — 14/09</span><span class="arrow">›</span></button>
     <div class="body">
       <div class="tlh">
         <div class="tlh-t">Timeline chụp ảnh Pre-wedding</div>
@@ -464,10 +450,10 @@
       </div>
       <div class="goi"><div class="goi-h">Trang phục &amp; đồ chuẩn bị</div><ul class="ck">
 <li><span class="txt">Váy phi — chụp tại Vũ Garden<small>Studio chuẩn bị</small></span></li>
-<li><span class="txt">Váy ren + voan ren — chụp tại Bảo tàng<small>Studio chuẩn bị</small></span></li>
+<li><span class="txt">Váy ren + voan ren — chụp tại <b>BẢO TÀNG MỸ THUẬT</b><small>Studio chuẩn bị</small></span></li>
 <li><span class="txt">Guốc cho cô dâu<small>Studio mang theo</small></span></li>
 <li><span class="txt">Trang phục thường cho concept Hong Kong<small>Anh chị tự chuẩn bị, mang theo sẵn từ sáng</small></span></li>
-<li><span class="txt">Vest chú rể<small>Anh tự chuẩn bị · studio mang theo 1 bộ dự phòng: vest trắng + quần đen anh đã thử</small></span></li>
+<li><span class="txt"><b>VEST CHÚ RỂ — anh NHỚ MANG THEO</b><small>Studio chỉ có 1 bộ dự phòng: vest trắng + quần đen anh đã thử</small></span></li>
 <li><span class="txt">Hoa cầm tay tươi<small>Nupakachi chuẩn bị theo hợp đồng</small></span></li>
 </ul></div>
 
@@ -486,13 +472,14 @@
 
   <!-- 6. HAI BẠN CẦN CHUẨN BỊ -->
   <section class="sec" data-sec="chuanbi">
-    <button class="head" type="button"><span class="num">6</span><span class="t">Hai bạn cần chuẩn bị gì</span><span class="arrow">›</span></button>
+    <button class="head" type="button"><span class="num">5</span><span class="t">Hai bạn cần chuẩn bị gì</span><span class="arrow">›</span></button>
     <div class="body">
       <div class="note">Soạn sẵn từ tối hôm trước cho khỏi quên. Buổi chụp bắt đầu từ <b>3h sáng</b> và kéo tới <b>14h</b>.</div>
 
       <div class="goi">
         <div class="goi-h">Mang theo trong ngày chụp</div>
         <ul class="ck" data-ck>
+          <li><input type="checkbox" data-k="mt0"><span class="txt"><b>CHÚ RỂ NHỚ MANG VEST</b><small>Studio chỉ mang 1 bộ dự phòng: vest trắng + quần đen anh đã thử</small></span></li>
           <li><input type="checkbox" data-k="mt1"><span class="txt">Trang phục thường cho concept Hong Kong<small>Cả hai bạn, thay tại Quận 5</small></span></li>
           <li><input type="checkbox" data-k="mt2"><span class="txt">Tiền vé vào cửa <b>BẢO TÀNG MỸ THUẬT</b><small>Khoản này không nằm trong hợp đồng</small></span></li>
           <li><input type="checkbox" data-k="mt4"><span class="txt">Nước uống, đồ ăn nhẹ, sạc dự phòng</span></li>
@@ -518,6 +505,7 @@
       <div class="goi">
         <div class="goi-h">Chú rể <b>Luke</b></div>
         <ul class="ck" data-ck>
+          <li><input type="checkbox" data-k="cr0"><span class="txt"><b>NHỚ MANG VEST</b> theo ngày chụp<small>Vest anh tự chuẩn bị · studio chỉ có 1 bộ dự phòng</small></span></li>
           <li><input type="checkbox" data-k="cr1"><span class="txt">Cắt tóc gọn gàng, vuốt gel tóc<small>Cắt trước ngày chụp ít nhất 1 ngày</small></span></li>
           <li><input type="checkbox" data-k="cr2"><span class="txt">Cạo râu</span></li>
           <li><input type="checkbox" data-k="cr3"><span class="txt">Thay kính cận bằng lens</span></li>
@@ -534,7 +522,7 @@
 
   <!-- 7. QUY TRÌNH CHỈNH SỬA ẢNH -->
   <section class="sec" data-sec="chinhsua">
-    <button class="head" type="button"><span class="num">7</span><span class="t">Quy trình chỉnh sửa ảnh</span><span class="arrow">›</span></button>
+    <button class="head" type="button"><span class="num">6</span><span class="t">Quy trình chỉnh sửa ảnh</span><span class="arrow">›</span></button>
     <div class="body">
       <div class="note">Các bước lần lượt sau buổi chụp, hai bạn theo đúng thứ tự này nhé.</div>
 
@@ -562,6 +550,26 @@
           <li><span class="txt">Xem hình trên <b>thiết bị Apple</b><small>Màn hình khác có thể lệch màu so với bản studio duyệt</small></span></li>
           <li><span class="txt">Giữ đúng tiến độ team hẹn<small>Chậm quá 1 tháng sẽ phát sinh phí</small></span></li>
         </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. THIỆP ONLINE -->
+  <section class="sec" data-sec="thiep">
+    <button class="head" type="button"><span class="num">7</span><span class="t">Thiệp online</span><span class="arrow">›</span></button>
+    <div class="body">
+      <div class="note">Hai bạn xem <b>thiệp mẫu</b> trước, rồi điền <b>form</b> — thiệp sẽ tự dựng và link gửi về mail của hai bạn.</div>
+      <div class="link">
+        <div class="lk">
+          <div class="lk-t">Thiệp mẫu cho khách xem trước</div>
+          <a href="https://dolinhanh-bridal.github.io/thiep-mau-dolinhanh/" target="_blank" rel="noopener">dolinhanh-bridal.github.io/thiep-mau-dolinhanh/</a>
+          <button class="btn" type="button" data-copy="https://dolinhanh-bridal.github.io/thiep-mau-dolinhanh/">Copy link thiệp mẫu</button>
+        </div>
+        <div class="lk">
+          <div class="lk-t">Form làm thiệp — khách tự điền</div>
+          <a href="https://script.google.com/macros/s/AKfycbwVWHJMBZFw6XX7t2Haqs9AT1UTgPmdKUHLzm69Si_h7-ylKNd7HsfcwUQeI4AL-uiLVw/exec" target="_blank" rel="noopener">script.google.com/macros/s/AKfycbwVWHJM…/exec</a>
+          <button class="btn" type="button" data-copy="https://script.google.com/macros/s/AKfycbwVWHJMBZFw6XX7t2Haqs9AT1UTgPmdKUHLzm69Si_h7-ylKNd7HsfcwUQeI4AL-uiLVw/exec">Copy link form</button>
+        </div>
       </div>
     </div>
   </section>
@@ -632,7 +640,7 @@
     var chu=b.textContent;
     b.addEventListener("click", function(){
       navigator.clipboard.writeText(b.dataset.copy).then(function(){
-        b.textContent="Đã copy link";
+        b.textContent = (document.documentElement.lang === "en") ? "Link copied" : "Đã copy link";
         setTimeout(function(){ b.textContent=chu; },2500);
       }).catch(function(){ b.textContent="Máy không cho copy — bấm vào link ở trên"; });
     });
@@ -658,6 +666,42 @@
     try{ oma.value=localStorage.getItem("ma-anh-oanh-luke")||""; }catch(e){}
     oma.addEventListener("input", function(){ try{ localStorage.setItem("ma-anh-oanh-luke", oma.value); }catch(e){} });
   }
+
+  var TU = {"Cô dâu Oanh & chú rể Luke": "Oanh & Luke", "Buổi chụp pre-wedding 14/09/2026 · toàn bộ thông tin buổi chụp của hai bạn": "Pre-wedding shoot on 14/09/2026 · everything about your day", "Gói pre": "Package", "Vũ Garden (SG Outdoor)": "Vu Garden (SG Outdoor)", "Chụp": "Shoot", "2 váy + 1 outfit thường": "2 dresses + 1 casual outfit", "3 địa điểm": "3 locations", "Tặng": "Complimentary", "chụp film": "film photography", "(miễn công)": "(shooting fee waived)", "thiệp online": "online invitation", "Hơn mười lăm năm sau ống kính — chụp ảnh cưới và quay phim ngày cưới, đồng hành cùng váy cưới": "More than fifteen years behind the camera — wedding photography and films, alongside the gowns of", "Showroom HCM": "Showroom HCMC", "Showroom Hà Nội": "Showroom Hanoi", "Chụp pre-wedding": "Pre-wedding shoot", "Vũ Garden · Quận 5 ·": "Vu Garden · District 5 ·", "BẢO TÀNG MỸ THUẬT": "FINE ARTS MUSEUM", "Ngày cưới": "Wedding day", "Hẹn gặp lại hai bạn": "See you both then", "Hợp đồng & thanh toán": "Contract & payments", "Các mốc thanh toán của hai bạn — bấm vào dòng để xem khoản đó gồm những gì.": "Your payment milestones — tap a row to see what it covers.", "Đặt cọc lần 1": "First deposit", "29/08/2026 — đã nhận": "29/08/2026 — received", "Tiền giữ lịch buổi chụp, đã nhận ngày 29/08/2026. Khoản này trừ thẳng vào tổng giá trị hợp đồng, không phải phí riêng.": "Deposit to hold your shoot date, received on 29/08/2026. It is deducted from the contract total, not an extra fee.", "Thanh toán lần 2": "Second payment", "14/09/2026 — ngày chụp, trước khi nhận link file gốc": "14/09/2026 — shoot day, before the raw file link is sent", "Toàn bộ phần còn lại của hợp đồng:": "The rest of the contract:", "nốt gói Vũ Garden,": "balance of the Vu Garden package,", "concept Hong Kong,": "Hong Kong concept,", "xe,": "transport,", "vé vào cửa Vũ Garden và Quận 5,": "entrance tickets for Vu Garden and District 5,", "phần hoa tươi khách chi và": "your share of the fresh bouquet, and", "tiền 3 cuộn film cộng công tráng. Thu trong ngày chụp, trước khi studio gửi link file gốc.": "for 3 rolls of film plus developing. Paid on the shoot day, before the studio sends the raw file link.", "Vé vào cửa BẢO TÀNG MỸ THUẬT hai bạn tự trả tại chỗ": "Entrance tickets to the FINE ARTS MUSEUM are paid by you on site", ", không nằm trong hợp đồng.": ", they are not part of the contract.", "Sản phẩm nhận được": "What you receive", "Những gì hai bạn nhận được sau buổi chụp. Giờ giấc, địa điểm và trang phục nằm ở mục": "What you receive after the shoot. Times, locations and outfits are in section", "5 · Timeline buổi chụp": "5 · Shoot timeline", "Gói chụp": "Package", "(SG Outdoor) — chụp 14/09/2026": "(SG Outdoor) — shooting on 14/09/2026", "Ảnh gốc": "Raw photos", "600 – 800 file · link tải gửi sau buổi chụp": "600 – 800 files · download link sent after the shoot", "Ảnh pts": "Retouched photos", "40 ảnh photoshop": "40 retouched images", "Hàn Quốc 25×30, 30 trang · duyệt demo màu trước khi in": "Korean style 25×30, 30 pages · colour proof approved before printing", "Ảnh phóng": "Enlarged prints", "1 ảnh pha lê ultra HD 60×90 · 2 ảnh bàn 15×21": "1 ultra HD crystal print 60×90 · 2 desk prints 15×21", "Slideshow ảnh": "Photo slideshow", "Phần": "Complimentary", "tặng kèm": "extras", "Ảnh chụp film": "Film photos", "Miễn phí công chụp — 3 cuộn film do khách chi": "Shooting fee waived — 3 rolls of film paid by you", "5 thiết kế tặng kèm": "5 complimentary designs", "Thiệp cưới online": "Online wedding invitation", "Xem mục 3": "See section 3", "Thiệp online": "Online invitation", "Hai bạn xem": "Have a look at the", "thiệp mẫu": "sample invitation", "trước, rồi điền": "first, then fill in the", "— thiệp sẽ tự dựng và link gửi về mail của hai bạn.": "— your invitation is built automatically and the link is emailed to you.", "Thiệp mẫu cho khách xem trước": "Sample invitation to view first", "Copy link thiệp mẫu": "Copy sample link", "Form làm thiệp — khách tự điền": "Invitation form — fill it in yourselves", "Copy link form": "Copy form link", "Moodboard Pre": "Mood board", "Moodboard chia theo 3 nơi chụp — để hai bạn hình dung tinh thần từng set, không phải khuôn mẫu phải chụp y hệt.": "Mood boards for the three locations — to show the feeling of each set, not shots to copy exactly.", "A · Chụp": "A · Shooting at", "Vũ Garden": "Vu Garden", "— ngoại cảnh sáng sớm": "— early morning outdoors", "— Quận 5": "— District 5", "C · Chụp": "C · Shooting at", "BẢO TÀNG MỸ THUẬT TP.HCM": "FINE ARTS MUSEUM OF HCMC", "Timeline buổi chụp — 14/09": "Shoot timeline — 14/09", "Timeline chụp ảnh Pre-wedding": "Pre-wedding shoot timeline", "Buổi chụp kết hợp": "A shoot by", "Cô dâu chú rể có mặt đúng các mốc giờ bên dưới.": "Please be ready at each time below.", ": Vũ Garden · concept Hong Kong Quận 5 ·": ": Vu Garden · Hong Kong concept in District 5 ·", "Layout makeup gợi ý — mốc": "Suggested makeup looks —", "3:00 trang điểm": "3:00 makeup", "Cam Tây — da ngăm/trung bình, gương mặt sắc sảo": "Warm coral — for medium to deep skin, defined features", "Hồng Cam — da sáng, gương mặt trái xoan": "Pink coral — for fair skin, oval face", "Trang phục & đồ chuẩn bị": "Outfits & what to prepare", "Váy phi — chụp tại Vũ Garden": "Satin dress — for Vu Garden", "Studio chuẩn bị": "Prepared by the studio", "Váy ren + voan ren — chụp tại": "Lace dress + lace veil — at the", "Guốc cho cô dâu": "Wedge shoes for the bride", "Studio mang theo": "Brought by the studio", "Trang phục thường cho concept Hong Kong": "Casual outfits for the Hong Kong concept", "Anh chị tự chuẩn bị, mang theo sẵn từ sáng": "You prepare these and bring them from the morning", "VEST CHÚ RỂ — anh NHỚ MANG THEO": "GROOM'S SUIT — PLEASE REMEMBER TO BRING IT", "Studio chỉ có 1 bộ dự phòng: vest trắng + quần đen anh đã thử": "The studio has only one spare: white jacket + black trousers you tried on", "Hoa cầm tay tươi": "Fresh bouquet", "Nupakachi chuẩn bị theo hợp đồng": "Prepared by Nupakachi per the contract", "Váy phi · Vũ Garden 6:30 – 8:30": "Satin dress · Vu Garden 6:30 – 8:30", "Váy ren · BẢO TÀNG MỸ THUẬT 12:30 – 14:00": "Lace dress · FINE ARTS MUSEUM 12:30 – 14:00", "Voan ren · đi cùng váy ren": "Lace veil · worn with the lace dress", "Sau buổi chụp: khách chọn và gửi lại": "After the shoot, please send back", "40 ảnh pts (mã ảnh) trước 20h tối cùng ngày": "40 photo codes for retouching, before 8 pm the same day", "Hai bạn cần chuẩn bị gì": "What you need to prepare", "Soạn sẵn từ tối hôm trước cho khỏi quên. Buổi chụp bắt đầu từ": "Pack everything the night before. The day starts at", "3h sáng": "3:00 am", "và kéo tới": "and runs until", "14h": "2:00 pm", "Mang theo trong ngày chụp": "Bring on the shoot day", "CHÚ RỂ NHỚ MANG VEST": "GROOM: REMEMBER YOUR SUIT", "Studio chỉ mang 1 bộ dự phòng: vest trắng + quần đen anh đã thử": "The studio carries only one spare: white jacket + black trousers you tried on", "Cả hai bạn, thay tại Quận 5": "For both of you, changed in District 5", "Tiền vé vào cửa": "Cash for entrance tickets to the", "Khoản này không nằm trong hợp đồng": "This is not part of the contract", "Nước uống, đồ ăn nhẹ, sạc dự phòng": "Water, snacks, a power bank", "Cô dâu": "Bride", "Ngủ sâu giấc": "Sleep well", "Ngủ trước 23h đêm trước": "In bed before 11 pm the night before", "Tẩy da chết, đắp mặt nạ": "Exfoliate and use a face mask", "Làm trước 1 – 2 ngày, không nặn mụn sát ngày chụp": "Do this 1 – 2 days ahead, no squeezing spots close to the shoot", "Gội đầu, tóc đều màu": "Wash your hair, even hair colour", "Thay kính cận bằng lens": "Swap glasses for contact lenses", "Nude bra & nude underwear": "Nude bra & nude underwear", "Không quai, màu da, không viền nổi — hợp váy cúp ngực": "Strapless, skin tone, no visible seams — for the strapless dress", "Làm nail": "Get your nails done", "Phụ kiện phù hợp": "Matching accessories", "Bông tai, lắc tay, vòng cổ": "Earrings, bracelet, necklace", "Giày đế xuồng + giày cao gót": "Wedge shoes + high heels", "Studio có mang giày cao gót — hai bạn mang thêm đôi quen chân nếu muốn": "The studio brings high heels — bring your own comfortable pair if you like", "Giày hoặc sandal phối cùng trang phục thường": "Shoes or sandals to match the casual outfit", "Cho concept Hong Kong tại Quận 5": "For the Hong Kong concept in District 5", "Hạn chế đồ ăn nhiều dầu mỡ": "Go easy on oily food", "Chú rể": "Groom", "NHỚ MANG VEST": "REMEMBER YOUR SUIT", "theo ngày chụp": "on the shoot day", "Vest anh tự chuẩn bị · studio chỉ có 1 bộ dự phòng": "You bring your own suit · the studio has only one spare", "Cắt tóc gọn gàng, vuốt gel tóc": "Neat haircut, styled with gel", "Cắt trước ngày chụp ít nhất 1 ngày": "Cut it at least a day before the shoot", "Cạo râu": "Shave", "Sơ mi trắng": "White shirt", "Đai lưng": "Belt", "Giày tây · tất cao cổ đen & trắng": "Dress shoes · black & white crew socks", "Hạn chế bia rượu": "Go easy on alcohol", "Quy trình chỉnh sửa ảnh": "Photo editing process", "Các bước lần lượt sau buổi chụp, hai bạn theo đúng thứ tự này nhé.": "The steps after the shoot, in this order.", "Các bước": "Steps", "sau buổi chụp": "after the shoot", "Trả file gốc": "Raw files delivered", "— studio gửi link drive": "— the studio sends a drive link", "Hai bạn chọn ảnh trong": "Choose your photos within", "3 ngày": "3 days", "· link tự xoá sau": "· the link is deleted after", "5 ngày": "5 days", ", nhớ tải về sớm": ", so download them early", "Hai bạn gửi mã ảnh đã chọn": "You send the chosen photo codes", "Chỉ gửi mã ảnh · ghi rõ mã nào làm ảnh phóng (có ghi tên và ngày cưới không), mã nào làm ảnh bàn · note yêu cầu chỉnh sửa nếu có · gửi kèm 3 bài hát tổng 10 – 15 phút để làm slideshow": "Photo codes only · say which code is for the enlarged print (with your names and wedding date?) and which for the desk print · note any editing requests · send 3 songs, 10 – 15 minutes in total, for the slideshow", "Gửi màu demo": "Colour proofs sent", "— 3 file mẫu": "— 3 sample files", "Hai bạn chọn 1 màu trong": "Choose one within", "7 ngày": "7 days", "Studio chỉnh ảnh theo màu đã chọn": "The studio edits in the colour you chose", "Màu ảnh · làm sạch da (nốt ruồi, hình xăm, mụn) · khuôn mặt (nhỏ mặt, cánh mũi, sống mũi) · hình dáng (tay chân thon, cân đối) · trang phục (nếp gấp) · tóc con": "Colour · skin clean-up (moles, tattoos, spots) · face (slimmer face, nose) · body shape (slimmer arms and legs, balance) · outfit creases · flyaway hair", "Hai bạn duyệt ảnh": "You review the photos", "— sửa tối đa": "— up to", "2 lần": "2 rounds of changes", "Mỗi lần note rõ ảnh nào, sửa chỗ nào": "Each time, say clearly which photo and what to change", "Hoàn thiện album": "Album finalised", "Trong": "Within", "21 ngày": "21 days", "· hai bạn sửa tối đa": "· up to", "· duyệt luôn câu chữ trên album": "· album wording approved at the same time", "In sản phẩm": "Products printed", "14 ngày": "14 days", "sau khi duyệt xong": "after approval", "Nhận sản phẩm hoàn thiện": "You receive the finished products", "& gửi feedback": "& send us your feedback", "Ô ghi mã ảnh — cô dâu điền vào đây": "Photo codes — write them here", "Điền xong hai bạn": "When you are done,", "chụp màn hình gửi lại studio": "screenshot this and send it to the studio", "nhé. Chữ gõ vào đây chỉ lưu trên máy của hai bạn, studio không tự nhận được.": ". What you type stays on your own device, the studio does not receive it automatically.", "Vài lưu ý khi xem và duyệt ảnh": "A few notes when reviewing", "Studio nắn chỉnh theo": "The studio retouches to a", "góc nhìn phổ thông": "conventional standard", "Nếu hai bạn quen dùng app và biết rõ muốn nắn chỗ nào, hãy note lại từng góc cụ thể": "If you use editing apps and know exactly what you want adjusted, note each detail", "Xem hình trên": "View the photos on an", "thiết bị Apple": "Apple device", "Màn hình khác có thể lệch màu so với bản studio duyệt": "Other screens may show colours differently from the version the studio approved", "Giữ đúng tiến độ team hẹn": "Keep to the schedule the team gives you", "Chậm quá 1 tháng sẽ phát sinh phí": "More than a month late and extra fees apply", "Ebook cẩm nang cô dâu": "The bride's ebook", "— cuốn cẩm nang 24 trang Dolinhanh Bridal tặng riêng cô dâu: cách chọn dáng váy hợp người, chọn voan, thứ tự chuẩn bị trước ngày cưới. Trang đọc có nút chuyển": "— a 24-page guide from Dolinhanh Bridal for the bride: choosing a dress shape that suits you, choosing a veil, and the order to prepare things before the wedding. The reading page has a", "nên gửi được cho cả chú rể Luke.": "switch, so Luke can read it too.", "Đọc trên điện thoại": "Read on your phone", "Copy link đọc ebook": "Copy reading link", "Tải bản PDF": "Download the PDF", "Copy link tải PDF": "Copy PDF link", "Có gì hai bạn nhắn lại studio nhé · cập nhật 09/09/2026": "Message the studio any time · updated 09/09/2026", "Xem mục 7": "See section 7", "4 · Timeline buổi chụp": "4 · Shoot timeline", "VŨ GARDEN": "VU GARDEN", "B · Concept": "B · Concept", "Bảo tàng": "museum"};
+  var BR = String.fromCharCode(10);
+  var PH = {
+    vi: "VD:" + BR + "IMG_0412 · ảnh phóng, có ghi tên + ngày cưới" + BR + "IMG_0518 · ảnh bàn" + BR + "IMG_0733, IMG_0741, IMG_0802…",
+    en: "e.g." + BR + "IMG_0412 · enlarged print, with names + wedding date" + BR + "IMG_0518 · desk print" + BR + "IMG_0733, IMG_0741, IMG_0802…"
+  };
+  var nodes = [];
+  (function(){
+    var w = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
+      acceptNode: function(n){
+        var p = n.parentNode ? n.parentNode.nodeName : "";
+        if(p === "SCRIPT" || p === "STYLE" || p === "TEXTAREA") return NodeFilter.FILTER_REJECT;
+        return n.nodeValue.trim() ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
+      }
+    });
+    var n; while((n = w.nextNode())) nodes.push([n, n.nodeValue]);
+  })();
+  function datNgonNgu(l){
+    nodes.forEach(function(pair){
+      var node = pair[0], goc = pair[1], k = goc.trim();
+      node.nodeValue = (l === "en" && TU[k]) ? goc.replace(k, TU[k]) : goc;
+    });
+    var o = document.querySelector("[data-ma-k]");
+    if(o) o.placeholder = PH[l];
+    document.querySelectorAll(".lang button").forEach(function(b){
+      b.classList.toggle("on", b.dataset.lang === l);
+    });
+    document.documentElement.lang = l;
+    try{ localStorage.setItem("lang-oanh-luke", l); }catch(e){}
+  }
+  document.querySelectorAll(".lang button").forEach(function(b){
+    b.addEventListener("click", function(){ datNgonNgu(b.dataset.lang); });
+  });
+  var luu = "vi"; try{ luu = localStorage.getItem("lang-oanh-luke") || "vi"; }catch(e){}
+  if(luu === "en") datNgonNgu("en");
   var lb=document.createElement("div"); lb.className="lb";
   lb.innerHTML='<button class="dong" aria-label="Đóng">×</button><button class="qua tr" aria-label="Ảnh trước">‹</button><img alt=""><button class="qua ph" aria-label="Ảnh sau">›</button><div class="dem"></div>';
   document.body.appendChild(lb);
